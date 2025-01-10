@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despeja tus dudas</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Conocete</h1>
+    </header>
+    <div class="container">
+        <form id="quizForm">
+            <div id="questionContainer" class="question"></div>
+            <div id="messageContainer" class="message hidden"></div>
+            <button type="button" id="prevButton" class="hidden" onclick="prevQuestion()">Anterior</button>
+            <button type="button" id="nextButton" onclick="nextQuestion()">Siguiente</button>
+            <button type="button" id="submitButton" class="hidden" onclick="evaluateQuiz()">Enviar</button>
+        </form>
+
+        <div id="feedback" class="message hidden"></div>
+        <div id="reward" class="reward hidden">🎉 ¡Eres increíble! 🎉</div>
+    </div>
+
+    <footer>
+        <p>© 2025 Encuesta de Autoestima. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
